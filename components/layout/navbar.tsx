@@ -23,7 +23,7 @@ export function Navbar() {
 
   const navItems = [
     { href: "/", label: t("nav.home") },
-    { href: "/#services", label: t("nav.services") },
+    { href: "/our-services", label: t("nav.services") },
     { href: "/gallery", label: t("nav.gallery") },
     { href: "/contact", label: t("nav.contact") },
   ]

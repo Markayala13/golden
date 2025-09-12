@@ -27,7 +27,6 @@ interface ServiceItem {
   title: string
   subtitle: string
   image: string
-  description: string
 }
 
 export function Services() {
@@ -39,136 +38,102 @@ export function Services() {
       title: "CUSTOM",
       subtitle: "POOLS",
       image: "/optimized-services/CUSTOMEPOOLS.webp",
-      description:
-        "Custom-designed pools and spas built with premium materials and advanced technology for maximum enjoyment and durability.",
     },
     {
       id: "paving",
       title: "PAVER",
       subtitle: "DRIVEWAYS",
       image: "/optimized-services/PAVERDRIVEWAYS.webp",
-      description:
-        "Elegant and durable paving solutions using premium materials that enhance curb appeal and withstand Texas weather.",
     },
     {
       id: "walls",
       title: "RETAINING",
       subtitle: "WALLS",
       image: "/optimized-services/RETAININGWALLS.webp",
-      description:
-        "Our retaining walls combine design and functionality, integrating perfectly with the landscape.",
     },
     {
       id: "hardscaping",
       title: "OUTDOOR",
       subtitle: "HARDSCAPING",
       image: "/optimized-services/OUTDOORHARDSCAIPING.webp",
-      description:
-        "Professional hardscaping services creating beautiful outdoor living spaces perfect for entertainment and relaxation.",
     },
     {
       id: "bbq",
       title: "BBQ",
       subtitle: "ISLANDS",
       image: "/optimized-services/BBQISLAND.webp",
-      description:
-        "Custom outdoor kitchen and BBQ island installations that transform your outdoor space into an entertainment hub.",
     },
     {
       id: "firepits",
       title: "STONE",
       subtitle: "FIRE PITS",
       image: "/optimized-services/STONEFIREPITS.webp",
-      description:
-        "Beautiful stone veneer fire pits and fireplaces that create the perfect gathering spot for family and friends.",
     },
     {
       id: "patio",
       title: "COVERED",
       subtitle: "PATIOS",
       image: "/optimized-services/COVERPATIOS.webp",
-      description:
-        "Professional patio cover installations that provide shade and protection while enhancing your outdoor living space.",
     },
     {
       id: "excavation",
       title: "EXCAVATION",
       subtitle: "",
       image: "/optimized-services/excavation.webp",
-      description:
-        "Precise excavation to lay the perfect foundation for your pool, ensuring structural integrity from the start.",
     },
     {
       id: "rebar",
       title: "FORMS",
       subtitle: "REBAR",
       image: "/optimized-services/formsAndRebar.webp",
-      description:
-        "Steel reinforcement (rebar) to create a strong and durable skeleton for your gunite pool.",
     },
     {
       id: "plumbing",
       title: "PLUMBING",
       subtitle: "",
       image: "/optimized-services/plumbing.webp",
-      description:
-        "Expert plumbing installation to ensure efficient water circulation and filtration for a pristine pool.",
     },
     {
       id: "gunite",
       title: "GUNITE",
       subtitle: "",
       image: "/optimized-services/genite.webp",
-      description:
-        "Application of gunite to form a solid, long-lasting, and customizable pool shell.",
     },
     {
       id: "plaster",
       title: "PLASTER",
       subtitle: "",
       image: "/optimized-services/plaster.webp",
-      description:
-        "High-quality plaster finishes for a smooth, beautiful, and watertight pool surface.",
     },
     {
       id: "coping_tile",
       title: "COPING",
       subtitle: "& TILE",
       image: "/optimized-services/coping&title.webp",
-      description:
-        "Elegant coping and tile work to frame your pool, adding a touch of class and safety.",
     },
     {
       id: "pool_deck",
       title: "POOL",
       subtitle: "DECK",
       image: "/optimized-services/poolDeck.webp",
-      description:
-        "Stylish and functional pool decks that create the perfect space for lounging and entertainment.",
     },
     {
       id: "water_feature",
       title: "WATER",
       subtitle: "FEATURE",
       image: "/optimized-services/TranquiPoolOasis.webp",
-      description:
-        "Custom water features like waterfalls and fountains to transform your pool into a tranquil oasis.",
     },
     {
       id: "pavers",
       title: "CUSTOM",
       subtitle: "PAVERS",
       image: "/optimized-services/CUSTOMEPAVERS.webp",
-      description:
-        "Versatile and durable paver solutions for patios, walkways, and any outdoor surface, tailored to your style.",
     },
     {
       id: "erosion_control",
       title: "EROSION",
       subtitle: "CONTROL",
       image: "/optimized-services/EROSIONCONTROL.webp",
-      description:
-        "Effective erosion control solutions to protect your landscape and pool structure from soil shifting and water damage.",
     },
   ]
 
@@ -216,7 +181,7 @@ export function Services() {
                 </h4>
 
                 <p className="text-xs sm:text-sm md:text-base font-sans text-gray-600 leading-relaxed max-w-md mx-auto">
-                  {service.description}
+                  {t(`services.${service.id}.description`)}
                 </p>
               </div>
             </div>
