@@ -1,0 +1,18 @@
+# Allow all user agents to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow crawling of Next.js internal directories
+Disallow: /_next/
+Disallow: /api/
+
+# Allow crawling of important pages
+Allow: /gallery
+Allow: /contact
+Allow: /our-services
+
+# Crawl-delay for better server performance
+Crawl-delay: 1
+
+# Location of sitemap file
+Sitemap: https://texaspoolandpavers.com/sitemap.xml
