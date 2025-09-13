@@ -142,10 +142,10 @@ export default function OurServicesPage() {
         {/* Hero Section */}
         <section className="py-20 md:py-32 bg-white">
           <div className="container mx-auto px-4 text-center">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-normal text-gray-900 mb-4 leading-tight tracking-normal animate-fade-up">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-normal text-primary-text mb-4 leading-tight tracking-normal animate-fade-up">
               {t("services.hero.title") || "Our Premium Services"}
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 font-sans font-light max-w-2xl mx-auto animate-fade-up-delay">
+            <p className="text-lg md:text-xl text-light-text font-serif font-light max-w-2xl mx-auto animate-fade-up-delay">
               Explore our diverse range of services, where artistry meets functionality.
             </p>
           </div>
@@ -176,15 +176,15 @@ export default function OurServicesPage() {
                   
                   {/* Content */}
                   <div className="w-1/2 text-center animate-fade-up-delay">
-                    <h3 className="text-sm md:text-lg font-sans font-light text-gray-500 tracking-widest uppercase">
+                    <h3 className="text-sm md:text-lg font-serif font-light text-light-text tracking-widest uppercase">
                       {service.title}
                     </h3>
                     
-                    <h4 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-normal text-gray-900 my-2 md:my-3 leading-tight">
+                    <h4 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-normal text-primary-text my-2 md:my-3 leading-tight">
                       {service.subtitle}
                     </h4>
                     
-                    <p className="text-xs sm:text-sm md:text-base font-sans text-gray-600 leading-relaxed max-w-md mx-auto">
+                    <p className="text-xs sm:text-sm md:text-base font-serif text-light-text leading-relaxed max-w-md mx-auto">
                       {t(`services.${service.id}.description`)}
                     </p>
                   </div>
@@ -197,10 +197,10 @@ export default function OurServicesPage() {
         {/* Contact Section */}
         <section className="py-20 md:py-32 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
-            <h3 className="text-3xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-8 md:mb-12 leading-tight animate-fade-up-delay">
+            <h3 className="text-3xl md:text-5xl lg:text-6xl font-serif font-light text-primary-text mb-8 md:mb-12 leading-tight animate-fade-up-delay">
               {t("services.cta.title")}
             </h3>
-            <p className="text-lg md:text-xl font-light text-gray-600 mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed animate-fade-up-delay">
+            <p className="text-lg md:text-xl font-serif font-light text-light-text mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed animate-fade-up-delay">
               {t("services.cta.description")}
             </p>
             

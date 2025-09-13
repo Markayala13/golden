@@ -74,9 +74,14 @@ export default function HomePage() {
               <p className="text-lg md:text-xl text-light-text font-sans font-light max-w-2xl mx-auto animate-fade-up-delay mt-4 mb-12">
                 Your backyard should feel like freedom—a sanctuary of stone, water, and light.
               </p>
-              <div className="mt-12 max-w-xs mx-auto aspect-square bg-gray flex items-center justify-center">
-                {/* Placeholder for 1:1 video on mobile */}
-                <p className="text-black">Video Placeholder</p>
+              <div className="mt-12 w-[95%] mx-auto aspect-square overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/img/Backyard Pool and Patio Ideas - AUNONNO.jpeg"
+                  alt="Beautiful backyard pool and patio design"
+                  width={400}
+                  height={400}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
             {/* Desktop/Tablet: text left, video space right */}
@@ -92,9 +97,14 @@ export default function HomePage() {
                   Your backyard should feel like freedom—a sanctuary of stone, water, and light.
                 </p>
               </div>
-              <div className="w-1/2 aspect-square bg-gray flex items-center justify-center">
-                {/* Placeholder for 1:1 video */}
-                <p className="text-black">Video Placeholder</p>
+              <div className="w-1/2 aspect-square overflow-hidden rounded-lg shadow-lg">
+                <Image
+                  src="/img/Backyard Pool and Patio Ideas - AUNONNO.jpeg"
+                  alt="Beautiful backyard pool and patio design"
+                  width={600}
+                  height={600}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -141,13 +151,16 @@ export default function HomePage() {
 
             <div className="max-w-4xl mx-auto">
               <div className="relative rounded-2xl shadow-2xl overflow-hidden">
-                {/* Placeholder for video */}
-                <div className="aspect-video bg-gray-900 flex items-center justify-center relative">
-                  <div className="absolute inset-0 bg-black/20"></div>
-                  <button className="relative z-10 bg-white/90 rounded-full p-4 hover:bg-white transition-colors duration-300">
-                    <Play className="w-8 h-8 text-gray-900 ml-1" fill="currentColor" />
-                  </button>
-                </div>
+                <iframe
+                  width="100%"
+                  height="400"
+                  src="https://www.youtube.com/embed/eOVdVbcqT4o?si=YOUR_EMBED_ID"
+                  title="From Vision to Reality - Golden Boy Stonework"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="aspect-video w-full"
+                ></iframe>
               </div>
             </div>
           </div>

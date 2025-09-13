@@ -1,4 +1,4 @@
-// File: E:\PROYECTOS\rename pavers 3\app\gallery\page.tsx
+// File: E:\PROYECTOS\Golden Boy\golden\app\gallery\page.tsx
 import * as entry from '../../../../app/gallery/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
