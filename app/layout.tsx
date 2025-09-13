@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Montserrat } from 'next/font/google'
+import { Playfair_Display, Source_Sans_3 } from 'next/font/google'
 import './globals.css'
 import { Navbar } from '@/components/layout/navbar'
 import { Footer } from '@/components/layout/footer'
@@ -10,13 +10,15 @@ import { SchemaMarkup } from '@/components/seo/SchemaMarkup'
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
+  weight: ['400', '600', '700'],
   variable: '--font-playfair',
   display: 'swap',
 })
 
-const montserrat = Montserrat({
+const sourceSans = Source_Sans_3({
   subsets: ['latin'],
-  variable: '--font-montserrat',
+  weight: ['300', '400', '600'],
+  variable: '--font-source-sans-pro',
   display: 'swap',
 })
 
@@ -68,7 +70,7 @@ export default function RootLayout({
       <head>
         <SchemaMarkup />
       </head>
-      <body className={`${playfair.variable} ${montserrat.variable} font-sans`}>
+      <body className={`${playfair.variable} ${sourceSans.variable} font-sans`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="light"
@@ -89,4 +91,4 @@ export default function RootLayout({
       </body>
     </html>
   )
-} 
+}

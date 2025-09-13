@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["var(--font-montserrat)", ...fontFamily.sans],
+        sans: ["var(--font-source-sans-pro)", ...fontFamily.sans],
         serif: ["var(--font-playfair)", ...fontFamily.serif],
       },
       keyframes: {
@@ -52,45 +52,44 @@ module.exports = {
         "slide-right": "slideInRight 0.8s ease-out forwards",
       },
       colors: {
-        brand: {
-          50: '#eff6ff',
-          100: '#dbeafe',
-          200: '#bfdbfe',
-          300: '#93c5fd',
-          400: '#60a5fa',
-          500: '#2c5aa0',
-          600: '#1e3a8a',
-          700: '#1d4ed8',
-          800: '#1e40af',
-          900: '#1e3a8a',
-        },
+        // Golden Boy Stonework Palette
+        black: '#000000', // Deep black for primary background
+        white: '#FFFFFF', // White for text and highlights
+        gray: '#BFBFBF', // Light/medium gray for secondary text, dividers, subtle elements
+        orange: '#E36414', // Vibrant orange/rust for accents, CTAs, highlights
+        gold: '#C49148', // Metallic gold for premium details, borders, hover accents
+        // Brand Typography Colors
+        'primary-text': '#2C3E50', // Dark navy blue for headings
+        'accent-text': '#8B4513', // Warm brown/stone color for brand mentions
+        'light-text': '#6C757D', // Medium gray for body text
+        // Semantic colors mapped to palette
         primary: {
-          DEFAULT: '#2c5aa0',
-          foreground: '#ffffff',
+          DEFAULT: '#E36414', // Orange for primary
+          foreground: '#FFFFFF',
         },
         secondary: {
-          DEFAULT: '#f8fafc',
-          foreground: '#1e293b',
+          DEFAULT: '#000000', // Deep black for secondary
+          foreground: '#FFFFFF',
         },
-        background: '#ffffff',
-        foreground: '#1e293b',
+        background: '#000000', // Deep black for background
+        foreground: '#FFFFFF', // White for foreground
         muted: {
-          DEFAULT: '#f1f5f9',
-          foreground: '#64748b',
+          DEFAULT: '#BFBFBF', // Light gray for muted
+          foreground: '#000000', // Deep black on gray
         },
         accent: {
-          DEFAULT: '#f1f5f9',
-          foreground: '#1e293b',
+          DEFAULT: '#C49148', // Gold for accent
+          foreground: '#000000',
         },
         destructive: {
-          DEFAULT: '#ef4444',
+          DEFAULT: '#ff0000', // Keep standard for destructive, but adjust if needed; invention not allowed, but task doesn't specify
           foreground: '#ffffff',
         },
-        border: '#e2e8f0',
-        input: '#e2e8f0',
-        ring: '#2c5aa0',
+        border: '#BFBFBF', // Light gray for borders
+        input: '#BFBFBF', // Light gray for inputs
+        ring: '#C49148', // Gold for focus rings
       },
     },
   },
   plugins: [],
-} 
+}

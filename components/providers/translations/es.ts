@@ -145,8 +145,8 @@ export const esTranslations = {
   "footer.services.kitchens": "Cocinas Exteriores",
   "footer.services.full_construction": "Construcción Completa de Piscinas",
   "footer.contact": "Información de Contacto",
-  "footer.phone": "(210) 374-2779",
-  "footer.email": "texaspoolandpavers@gmail.com",
+  "footer.phone": "(469) 478-6051 / (214) 478-6051",
+  "footer.email": "eliasbulmaro5@gmail.com / lopezbriana841@gmail.com",
   "footer.location": "Texas, EE.UU.",
   "footer.copyright": "© 2024 Texas Pool and Pavers. Todos los derechos reservados.",
 }

@@ -32,7 +32,7 @@ export function Navbar() {
     <motion.nav
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 border-t-2 border-gold ${
         isScrolled
           ? "bg-black/95 backdrop-blur-md shadow-lg"
           : "bg-black"
@@ -60,7 +60,7 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-sans text-sm font-normal text-white tracking-wider uppercase transition-colors hover:text-gray-300"
+                className="font-sans text-sm font-normal text-gray tracking-wider uppercase transition-colors hover:text-gold"
               >
                 {item.label}
               </Link>
@@ -68,15 +68,15 @@ export function Navbar() {
           </div>
 
           {/* Language Switcher */}
-          <div className="hidden md:flex items-center space-x-1 bg-black/30 rounded-lg p-1">
+          <div className="hidden md:flex items-center space-x-1 bg-black rounded-lg p-1">
             <Button
               variant="ghost"
               size="sm"
               onClick={() => setLanguage("en")}
               className={`p-1 rounded transition-all duration-200 ${
                 language === "en"
-                  ? "bg-stone-700 shadow-md"
-                  : "hover:bg-white/10"
+                  ? "bg-orange text-white shadow-md"
+                  : "text-white hover:bg-gold hover:text-black"
               }`}
             >
               <img src="/flags/us.png" alt="English" className="w-5 h-3 object-cover rounded" />
@@ -87,8 +87,8 @@ export function Navbar() {
               onClick={() => setLanguage("es")}
               className={`p-1 rounded transition-all duration-200 ${
                 language === "es"
-                  ? "bg-stone-700 shadow-md"
-                  : "hover:bg-white/10"
+                  ? "bg-orange text-white shadow-md"
+                  : "text-white hover:bg-gold hover:text-black"
               }`}
             >
               <img src="/flags/mx.png" alt="Español" className="w-5 h-3 object-cover rounded" />
@@ -100,7 +100,7 @@ export function Navbar() {
             variant="ghost"
             size="sm"
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white"
+            className="md:hidden text-gray hover:text-gold"
           >
             {isOpen ? (
               <X className="h-6 w-6" />
@@ -118,7 +118,7 @@ export function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-black border-t border-gray-800"
+            className="md:hidden bg-black border-t border-gold"
           >
             <div className="container mx-auto px-4 py-4">
               <div className="flex flex-col space-y-4">
@@ -127,12 +127,12 @@ export function Navbar() {
                     key={item.href}
                     href={item.href}
                     onClick={() => setIsOpen(false)}
-                    className="text-white font-sans text-base font-normal tracking-wider uppercase text-center py-2 hover:text-gray-300 transition-colors"
+                    className="text-gray font-sans text-base font-normal tracking-wider uppercase text-center py-2 hover:text-gold transition-colors"
                   >
                     {item.label}
                   </Link>
                 ))}
-                <div className="pt-4 border-t border-gray-800">
+                <div className="pt-4 border-t border-gold">
                   <div className="flex items-center justify-center space-x-4">
                     <Button
                       variant="ghost"
@@ -142,9 +142,9 @@ export function Navbar() {
                         setIsOpen(false)
                       }}
                       className={`p-2 rounded transition-all ${
-                        language === "en" 
-                          ? "bg-stone-700 shadow-md" 
-                          : "hover:bg-white/10"
+                        language === "en"
+                          ? "bg-orange text-white shadow-md"
+                          : "text-white hover:bg-gold hover:text-black"
                       }`}
                     >
                       <img src="/flags/us.png" alt="English" className="w-6 h-4 object-cover rounded" />
@@ -157,12 +157,12 @@ export function Navbar() {
                         setIsOpen(false)
                       }}
                       className={`p-2 rounded transition-all ${
-                        language === "es" 
-                          ? "bg-stone-700 shadow-md" 
-                          : "hover:bg-white/10"
+                        language === "es"
+                          ? "bg-orange text-white shadow-md"
+                          : "text-white hover:bg-gold hover:text-black"
                       }`}
                     >
-                      <img src="/flags/mx.png" alt="Español" className="w-6 h-4 object-cover rounded" />
+                      <img src="/flags/mx.png" alt="Espa\\xf1ol" className="w-6 h-4 object-cover rounded" />
                     </Button>
                   </div>
                 </div>

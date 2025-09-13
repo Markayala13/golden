@@ -141,10 +141,10 @@ export function Services() {
     <section id="services" className="py-12 md:py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-gray-900 mb-4 leading-tight tracking-normal animate-fade-up">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-black mb-4 leading-tight tracking-normal animate-fade-up">
             {t("services.hero.title") || "Our Premium Services"}
           </h2>
-          <p className="text-lg md:text-xl text-gray-600 font-sans font-light max-w-2xl mx-auto animate-fade-up-delay">
+          <p className="text-lg md:text-xl text-black font-sans font-light max-w-2xl mx-auto animate-fade-up-delay">
             Explore our diverse range of services, where artistry meets
             functionality.
           </p>
@@ -172,15 +172,15 @@ export function Services() {
 
               {/* Content */}
               <div className="w-1/2 text-center animate-fade-up [animation-delay:0.2s] opacity-0">
-                <h3 className="text-sm md:text-lg font-sans font-light text-gray-500 tracking-widest uppercase">
+                <h3 className="text-sm md:text-lg font-sans font-light text-black tracking-widest uppercase">
                   {service.title}
                 </h3>
 
-                <h4 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-normal text-gray-900 my-2 md:my-3 leading-tight">
+                <h4 className="text-2xl sm:text-3xl md:text-5xl lg:text-6xl font-serif font-normal text-black my-2 md:my-3 leading-tight">
                   {service.subtitle}
                 </h4>
 
-                <p className="text-xs sm:text-sm md:text-base font-sans text-gray-600 leading-relaxed max-w-md mx-auto">
+                <p className="text-xs sm:text-sm md:text-base font-sans text-black leading-relaxed max-w-md mx-auto">
                   {t(`services.${service.id}.description`)}
                 </p>
               </div>
