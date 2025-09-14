@@ -10,51 +10,51 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="py-32 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-6xl md:text-8xl font-light text-gray-900 mb-12 leading-tight tracking-tight">
+          <h1 className="text-6xl md:text-8xl font-serif font-normal text-black mb-12 leading-tight tracking-normal">
             {t("contact.title")}
           </h1>
-          <p className="text-xl font-light text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-xl font-serif font-light text-black max-w-4xl mx-auto leading-relaxed">
             {t("contact.subtitle")}
           </p>
         </div>
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-900">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-16 max-w-6xl mx-auto">
             <div className="text-center">
-              <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-wide">
+              <h3 className="text-2xl font-serif font-light text-white mb-6 tracking-wide">
                 {t("contact.phone.title")}
               </h3>
-              <p className="text-3xl font-light text-gray-900 mb-4">
-                +1 (210) 374-2779
+              <p className="text-3xl font-serif font-light text-white mb-4">
+                (469) 478-6051 / (214) 478-6051
               </p>
-              <p className="text-gray-600 font-light">
+              <p className="text-white font-serif font-light">
                 {t("contact.phone.schedule")}
               </p>
             </div>
 
             <div className="text-center">
-              <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-wide">
+              <h3 className="text-2xl font-serif font-light text-white mb-6 tracking-wide">
                 {t("contact.email.title")}
               </h3>
-              <p className="text-xl font-light text-gray-900 mb-4">
-                texaspoolandpavers@gmail.com
+              <p className="text-xl font-serif font-light text-white mb-4">
+                eliasbulmaro5@gmail.com / lopezbriana841@gmail.com
               </p>
-              <p className="text-gray-600 font-light">
+              <p className="text-white font-serif font-light">
                 {t("contact.email.response")}
               </p>
             </div>
 
             <div className="text-center">
-              <h3 className="text-2xl font-light text-gray-900 mb-6 tracking-wide">
+              <h3 className="text-2xl font-serif font-light text-white mb-6 tracking-wide">
                 {t("contact.address.title")}
               </h3>
-              <p className="text-xl font-light text-gray-900 mb-4">
-                11631 Culebra Rd, San Antonio, TX, 78253
+              <p className="text-xl font-serif font-light text-white mb-4">
+                Austin TX
               </p>
-              <p className="text-gray-600 font-light">
+              <p className="text-white font-serif font-light">
                 {t("contact.address.area")}
               </p>
             </div>
@@ -67,7 +67,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="w-full h-96">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.582383443323!2d-98.71429368489864!3d29.51369998208207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c676c93336d0b%3A0x36b3939f585a2493!2s11631%20Culebra%20Rd%2C%20San%20Antonio%2C%20TX%2078253%2C%20USA!5e0!3m2!1sen!2smx!4v1620400173839!5m2!1sen!2smx"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220749.58312043262!2d-97.9383829!3d30.2671530!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX%2C%20USA!5e0!3m2!1sen!2sus!4v1640000000000!5m2!1sen!2sus"
               width="100%"
               height="100%"
               style={{ border: 0 }}
@@ -81,10 +81,10 @@ export default function ContactPage() {
       {/* Serving Areas */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-light text-gray-900 mb-12">
+          <h2 className="text-4xl font-serif font-light text-white mb-12">
             {t("contact.serving.title")}
           </h2>
-          <p className="text-lg font-light text-gray-600 max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg font-serif font-light text-white max-w-4xl mx-auto leading-relaxed">
             {t("contact.serving.areas")}
           </p>
         </div>
@@ -95,10 +95,10 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-8 leading-tight">
+              <h2 className="text-5xl md:text-6xl font-serif font-normal text-black mb-8 leading-tight">
                 {t("contact.form.title")}
               </h2>
-              <p className="text-xl font-light text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl font-serif font-light text-black max-w-3xl mx-auto leading-relaxed">
                 {t("contact.form.subtitle")}
               </p>
             </div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
             <form action="https://formspree.io/f/mblkyeqn" method="POST" className="space-y-8">
               <div className="grid md:grid-cols-2 gap-8">
                 <div>
-                  <label className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                  <label className="block text-sm font-serif font-light tracking-wide text-black mb-3 uppercase">
                     {t("contact.form.firstName")}
                   </label>
                   <input
@@ -117,7 +117,7 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                  <label className="block text-sm font-serif font-light tracking-wide text-black mb-3 uppercase">
                     {t("contact.form.lastName")}
                   </label>
                   <input
@@ -130,7 +130,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                <label className="block text-sm font-serif font-light tracking-wide text-black mb-3 uppercase">
                   {t("contact.form.email")}
                 </label>
                 <input
@@ -142,7 +142,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                <label className="block text-sm font-serif font-light tracking-wide text-black mb-3 uppercase">
                   {t("contact.form.phone")}
                 </label>
                 <input
@@ -154,7 +154,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                <label className="block text-sm font-serif font-light tracking-wide text-black mb-3 uppercase">
                   {t("contact.form.service.label")}
                 </label>
                 <select name="service" className="w-full px-0 py-4 border-0 border-b-2 border-gray-200 focus:border-gray-900 focus:ring-0 bg-transparent text-lg font-light text-gray-600 transition-colors">
@@ -170,7 +170,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-light tracking-wide text-gray-700 mb-3 uppercase">
+                <label className="block text-sm font-serif font-light tracking-wide text-black mb-3 uppercase">
                   {t("contact.form.description.label")}
                 </label>
                 <textarea
@@ -184,7 +184,7 @@ export default function ContactPage() {
               <div className="text-center pt-12">
                 <button
                   type="submit"
-                  className="bg-gray-900 text-white hover:bg-gray-800 px-16 py-4 text-lg font-light tracking-wide transition-all duration-300"
+                  className="bg-orange text-black hover:bg-gold px-16 py-4 text-lg font-light tracking-wide transition-all duration-300"
                 >
                   {t("contact.form.button")}
                 </button>

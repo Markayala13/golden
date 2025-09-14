@@ -134,7 +134,7 @@ export const esTranslations = {
   "contact.social.facebook": "Facebook",
   "contact.social.instagram": "Instagram",
   "contact.serving.title": "Áreas de Servicio",
-  "contact.serving.areas": "Woods of Shavano, TX · San Antonio, TX · Stone Oak, TX · Preserve at Stone Oak, TX · Fair Oaks Ranch, TX · Shavano Park, TX · Helotes, TX · Alamo Heights, TX · Boerne, TX · Cibolo, TX",
+  "contact.serving.areas": "Austin, TX",
   "home.videos.title": "Nuestro Trabajo en Acción",
   "footer.description": "Creando hermosos espacios exteriores que mejoran tu estilo de vida y valor de propiedad.",
   "footer.services": "Servicios",

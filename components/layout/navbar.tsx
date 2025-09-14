@@ -49,7 +49,7 @@ export function Navbar() {
               height={120}
               className="h-16 md:h-20 w-auto"
             />
-            <span className="text-xl font-bold text-white">
+            <span className="text-xl font-bold text-orange">
               GOLDEN BOY STONEWORK
             </span>
           </Link>

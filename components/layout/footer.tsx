@@ -13,7 +13,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-2xl font-bold mb-4">Texas Pool and Pavers</h3>
+            <h3 className="text-2xl font-bold mb-4 text-orange">GOLDEN BOY STONEWORK</h3>
             <p className="text-gray mb-6 leading-relaxed">
               {t("footer.description")}
             </p>
@@ -68,9 +68,6 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gold mt-8 pt-8 text-center">
-          <p className="text-gray">{t("footer.copyright")}</p>
-        </div>
       </div>
     </footer>
   )

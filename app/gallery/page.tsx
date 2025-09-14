@@ -9,64 +9,27 @@ export default function GalleryPage() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   const videoIds = [
-    "LlozCzcYbk0",
-    "W1HLW-tKfkw",
-    "ATNDKGHHVcw",
-    "0sapS9_YOD4",
-    "IiJxE0VTicU",
-    "nNbDtCwD2sQ",
+    "V7jLrPJ7of4",
+    "GVGOovo-Usk",
+    "lLxrvGWY3vI",
+    "IC5eykDEhBQ",
+    "z-nm1sy18Ek",
   ]
 
   // Array con TODAS las imágenes del proyecto
   const allImages = [
-    "/pic/CapturePOOL.PNG",
-    "/pic/CaptureExterior Paving.PNG", 
-    "/pic/CaptureHARDSCAPING.PNG",
-    "/pic/CaptureBBQ ISLAND.PNG",
-    "/pic/CaptureStone Veneer Fire Pit.PNG",
-    "/pic/CaptureRoof Patio Cover.PNG",
-    "/pic/Capture2.PNG",
-    "/pic/Capture3.PNG",
-    "/pic/Capture4.PNG",
-    "/pic/Capture5.PNG",
-    "/pic/Capture6.PNG",
-    "/pic/Capture7.PNG",
-    "/pic/Capture9.PNG",
-    "/pic/Capture10.PNG",
-    "/pic/Capture11.PNG",
-    "/pic/Capture12.PNG",
-    "/pic/Capture13.PNG",
-    "/pic/Capture14.PNG",
-    "/pic/Capture15.PNG",
-    "/pic/Capture16.PNG",
-    "/pic/Capture17.PNG",
-    "/pic/CaptureCHI.PNG",
-    "/pic/CaptureExterior Paving.PNG",
-    "/pic/CapturePutting green installation.PNG",
-    "/pic/pool.PNG",
-    "/PIC2/1149300343803596628.JPG.jpeg",
-    "/PIC2/1279236777416248543.JPG.jpeg",
-    "/PIC2/1461283888647072929.JPG.jpeg",
-    "/PIC2/1530805180661866338.JPG.jpeg",
-    "/PIC2/2968672153266996369.jpeg",
-    "/PIC2/369636544481623943.JPG.jpeg",
-    "/PIC2/3783280118891404743.jpeg",
-    "/PIC2/4670276120140729302.jpeg",
-    "/PIC2/5618633722740195667.JPG.jpeg",
-    "/PIC2/6161639059872361854.JPG (1).jpeg",
-    "/PIC2/6161639059872361854.JPG.jpeg",
-    "/PIC2/6782619962157245086.JPG (1).jpeg",
-    "/PIC2/698484005983074106.jpeg",
-    "/PIC2/7711364407365262370.JPG.jpeg",
-    "/PIC2/8527807503362877378.JPG.jpeg",
-    "/PIC2/BEVERLY.png",
-    "/PIC2/IMG_0012.jpeg",
-    "/PIC2/IMG_1704 (1).jpeg",
-    "/PIC2/IMG_2049.JPEG",
-    "/PIC2/IMG_3245.JPG.jpeg",
-    "/PIC2/IMG_3246.JPG (1).jpeg",
-    "/PIC2/IMG_3247.JPG.jpeg",
-    "/PIC2/IMG_3922.JPEG"
+    "/img/done/14 Perfect Swimming Pool Coping and Tile Ideas (1).jpg",
+    "/img/done/area-de-parrilla-en-la-villa-junto-al-mar-un-gran-patio-con-una-parrilla-de-piedra-y-una-piedra-blanca-abierta (1).jpg",
+    "/img/done/carreteras-y-caminos (2).jpg",
+    "/img/done/casa-de-piso-de-madera-en-el-parque-qingdao-china (1).jpg",
+    "/img/done/estructura-construida-en-la-playa-contra-el-cielo-en-un-dia-soleado (1).jpg",
+    "/img/done/mujer-sentada-la-orilla-de-la-piscina (1).jpg",
+    "/img/done/paseo-en-un-hermoso-jardin (1).jpg",
+    "/img/done/piscina-junto-las-palmeras (1).jpg",
+    "/img/done/un-pozo-de-fuego-con-un-pozo-del-fuego-en-el-fondo (1).jpg",
+    "/img/done/una-elegante-zona-de-bar-al-aire-libre-con-taburetes-altos-un-mini-refrigerador-y-un-dosel-para-la-sombra (1) (1).jpg",
+    "/img/done/vista-de-angulo-alto-de-las-piedras-en-el-campo (1).jpg",
+    "/img/done/vista-exterior-del-edificio (1).jpg"
   ]
 
   // Carousel automático - cambiar imagen cada 4 segundos
@@ -120,25 +83,25 @@ export default function GalleryPage() {
             <div className="flex flex-row items-center gap-8 md:gap-16">
               {/* Company Mission Image */}
               <div className="w-1/2 overflow-hidden animate-fade-up">
-                <img 
-                  src="/pic/Capture4.PNG" 
-                  alt="Texas Pool & Pavers Mission"
+                <img
+                  src="/img/1 (17).jpg"
+                  alt="Golden Boy Stonework Mission"
                   className="w-full h-64 md:h-80 lg:h-96 object-cover"
                 />
               </div>
               
               {/* Company Description */}
               <div className="w-1/2 text-left animate-fade-up-delay">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-6 md:mb-8 leading-tight tracking-tight">
-                  TEXAS POOL<br />& PAVERS
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-normal text-primary-text mb-6 md:mb-8 leading-tight tracking-normal">
+                  GOLDEN BOY STONEWORK
                 </h1>
-                
-                <p className="text-base md:text-lg lg:text-xl font-light text-gray-600 leading-relaxed mb-6">
-                  {t("gallery.vision")}
+
+                <p className="text-base md:text-lg lg:text-xl font-serif font-light text-light-text leading-relaxed mb-6">
+                  Our vision as a family business is to build spaces that the community recognizes as essential and beautiful, always promising the best prices and the highest quality.
                 </p>
-                
-                <p className="text-base md:text-lg lg:text-xl font-light text-gray-600 leading-relaxed">
-                  {t("gallery.commitment")}
+
+                <p className="text-base md:text-lg lg:text-xl font-serif font-light text-light-text leading-relaxed">
+                  We use only premium, top-of-the-line materials and apply the most demanding quality standards in every project. Our commitment is to transform your outdoor spaces with artisanal excellence and exceptional durability
                 </p>
               </div>
             </div>
@@ -148,7 +111,7 @@ export default function GalleryPage() {
         {/* Our Projects Title */}
         <section className="py-16 bg-gray-50">
           <div className="container mx-auto px-4 text-center">
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-8 leading-tight animate-fade-up-delay">
+            <h3 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light text-orange mb-8 leading-tight animate-fade-up-delay">
               {t("gallery.projects.title")}
             </h3>
             <p className="text-lg md:text-xl font-light text-gray-600 max-w-4xl mx-auto leading-relaxed animate-fade-up-delay-2">
@@ -191,8 +154,8 @@ export default function GalleryPage() {
                     onClick={() => setCurrentImageIndex(index)}
                     className={`w-3 h-3 rounded-full transition-all duration-300 ${
                       index === currentImageIndex
-                        ? "bg-gray-900"
-                        : "bg-gray-300 hover:bg-gray-500"
+                        ? "bg-orange"
+                        : "bg-gold hover:bg-orange"
                     }`}
                   />
                 ))}
@@ -202,26 +165,26 @@ export default function GalleryPage() {
         </section>
 
         {/* Video Carousel Section */}
-        <section className="py-20 md:py-32 bg-gray-50">
+        <section className="py-20 md:py-32 bg-white">
           <div className="container mx-auto px-4">
             <VideoCarousel videoIds={videoIds} />
           </div>
         </section>
 
         {/* Contact Section */}
-        <section className="py-20 md:py-32 bg-gray-50">
+        <section className="py-20 md:py-32 bg-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-xs md:text-sm font-light tracking-widest uppercase text-gray-500 mb-6 md:mb-8 animate-fade-up">
+            <h2 className="text-xs md:text-sm font-serif font-light tracking-widest uppercase text-black mb-6 md:mb-8 animate-fade-up">
               {t("contact.subtitle")}
             </h2>
-            <h3 className="text-3xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-8 md:mb-12 leading-tight animate-fade-up-delay">
+            <h3 className="text-3xl md:text-5xl lg:text-6xl font-serif font-normal text-black mb-8 md:mb-12 leading-tight animate-fade-up-delay">
               {t("gallery.cta.title")}
             </h3>
-            <p className="text-lg md:text-xl font-light text-gray-600 mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed animate-fade-up-delay">
+            <p className="text-lg md:text-xl font-serif font-light text-black mb-12 md:mb-16 max-w-3xl mx-auto leading-relaxed animate-fade-up-delay">
               {t("gallery.cta.description")}
             </p>
 
-            <a href="/contact" className="inline-block bg-gray-900 text-white hover:bg-gray-800 px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-light tracking-wide transition-all duration-300 animate-fade-up-delay">
+            <a href="/contact" className="inline-block bg-orange text-black hover:bg-gold px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-light tracking-wide transition-all duration-300 animate-fade-up-delay">
               {t("gallery.cta.button")}
             </a>
           </div>

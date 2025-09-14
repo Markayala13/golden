@@ -30,10 +30,10 @@ export function VideoCarousel({ videoIds }: VideoCarouselProps) {
 
   return (
     <div className="relative w-full max-w-4xl mx-auto">
-      <h3 className="text-4xl md:text-5xl lg:text-6xl font-light text-gray-900 mb-8 md:mb-12 leading-tight text-center">
+      <h3 className="text-4xl md:text-5xl lg:text-6xl font-serif font-normal text-black mb-8 md:mb-12 leading-tight text-center">
         {t("home.videos.title")}
       </h3>
-      <div className="relative h-0 pb-[56.25%] overflow-hidden rounded-lg shadow-xl bg-black">
+      <div className="relative h-0 pb-[56.25%] overflow-hidden rounded-lg shadow-xl bg-white">
         {videoIds.map((videoId, index) => (
           <div
             key={videoId}
@@ -58,7 +58,7 @@ export function VideoCarousel({ videoIds }: VideoCarouselProps) {
       <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-12 hidden md:block">
         <button
           onClick={goToPrevious}
-          className="bg-white/80 hover:bg-white text-gray-900 p-3 rounded-full shadow-md transition-all"
+          className="bg-gold hover:bg-orange text-white p-3 rounded-full shadow-md transition-all"
           aria-label="Previous video"
         >
           <ChevronLeft className="h-6 w-6" />
@@ -67,7 +67,7 @@ export function VideoCarousel({ videoIds }: VideoCarouselProps) {
       <div className="absolute top-1/2 right-0 transform -translate-y-1/2 translate-x-12 hidden md:block">
         <button
           onClick={goToNext}
-          className="bg-white/80 hover:bg-white text-gray-900 p-3 rounded-full shadow-md transition-all"
+          className="bg-gold hover:bg-orange text-white p-3 rounded-full shadow-md transition-all"
           aria-label="Next video"
         >
           <ChevronRight className="h-6 w-6" />
@@ -77,14 +77,14 @@ export function VideoCarousel({ videoIds }: VideoCarouselProps) {
       <div className="md:hidden flex justify-center gap-8 mt-4">
         <button
             onClick={goToPrevious}
-            className="bg-gray-900/80 hover:bg-gray-900 text-white p-3 rounded-full shadow-md transition-all"
+            className="bg-gold hover:bg-orange text-white p-3 rounded-full shadow-md transition-all"
             aria-label="Previous video"
           >
             <ChevronLeft className="h-6 w-6" />
         </button>
         <button
             onClick={goToNext}
-            className="bg-gray-900/80 hover:bg-gray-900 text-white p-3 rounded-full shadow-md transition-all"
+            className="bg-gold hover:bg-orange text-white p-3 rounded-full shadow-md transition-all"
             aria-label="Next video"
           >
             <ChevronRight className="h-6 w-6" />
