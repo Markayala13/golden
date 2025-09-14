@@ -763,6 +763,9 @@ video {
 .h-48 {
   height: 12rem;
 }
+.h-28 {
+  height: 7rem;
+}
 .max-h-\[500px\] {
   max-height: 500px;
 }
@@ -816,6 +819,9 @@ video {
 }
 .w-\[80\%\] {
   width: 80%;
+}
+.w-28 {
+  width: 7rem;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1707,8 +1713,16 @@ video {
     height: 100vh;
   }
 
+  .md\:h-32 {
+    height: 8rem;
+  }
+
   .md\:w-40 {
     width: 10rem;
+  }
+
+  .md\:w-32 {
+    width: 8rem;
   }
 
   .md\:max-w-\[420px\] {

@@ -28,7 +28,7 @@ export default function HomePage() {
                 muted
                 playsInline
               >
-                <source src="/videos/desktop.mp4" type="video/mp4" />
+                <source src="/videos/video hero/0913.mp4" type="video/mp4" />
               </video>
               {/* Mobile video */}
               <video
@@ -38,7 +38,7 @@ export default function HomePage() {
                 muted
                 playsInline
               >
-                <source src="/videos/mobile.mp4" type="video/mp4" />
+                <source src="/videos/video hero/0914.mp4" type="video/mp4" />
               </video>
             </div>
 
@@ -174,19 +174,19 @@ function TestimonialsCarousel() {
   const [current, setCurrent] = useState(0)
   const testimonials = [
     {
+      quote: "From the first design meeting to the final touch, they treated our project like their own home. We finally have the luxury space we always dreamed of.",
+      name: "Ricardo",
+      image: "/reviws/ricardo.jpg"
+    },
+    {
       quote: "Our backyard feels like a private retreat now. The stonework and pool design are stunning, and the team made everything so smooth and stress-free.",
       name: "Sarah M., Austin",
-      image: "/placeholder/testimonial1.jpg" // Placeholder for b&w photo
+      image: "/reviws/sara.png"
     },
     {
       quote: "Golden Boy Stonework completely transformed our patio. The fire pit became the heart of our family gatherings, and the quality is just unbeatable.",
       name: "James & Laura, Dallas",
-      image: "/placeholder/testimonial2.jpg"
-    },
-    {
-      quote: "From the first design meeting to the final touch, they treated our project like their own home. We finally have the luxury space we always dreamed of.",
-      name: "Ricardo G., Houston",
-      image: "/placeholder/testimonial3.jpg"
+      image: "/reviws/james.jpg"
     }
   ]
 
@@ -225,9 +225,12 @@ function TestimonialsCarousel() {
                 </cite>
               </div>
               <div className="flex-shrink-0">
-                <div className="w-32 h-32 md:w-40 md:h-40 bg-gray-300 rounded-full overflow-hidden flex items-center justify-center" style={{ filter: 'grayscale(100%)' }}>
-                  {/* Placeholder for b&w editorial photo */}
-                  <span className="text-black text-sm">Photo</span>
+                <div className="w-28 h-28 md:w-32 md:h-32 overflow-hidden flex items-center justify-center" style={{ borderRadius: '50%' }}>
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>
