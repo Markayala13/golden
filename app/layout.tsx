@@ -23,30 +23,29 @@ const sourceSans = Source_Sans_3({
 })
 
 export const metadata: Metadata = {
-  title: 'Custom Pools & Pavers in Texas | Texas Pool & Pavers',
-  description: 'Top-rated specialists in custom swimming pools, elegant paver driveways, and luxury outdoor living spaces in Texas. Professional pool construction, hardscaping, BBQ islands, fire pits, and covered patios. Get your free quote today!',
-  keywords: 'custom pools Texas, paver driveways, pool construction, hardscaping, BBQ islands, fire pits, covered patios, outdoor living, San Antonio pools, Texas pavers',
-  authors: [{ name: 'Texas Pool & Pavers' }],
-  creator: 'Texas Pool & Pavers',
-  publisher: 'Texas Pool & Pavers',
-  robots: 'index, follow',
-  viewport: 'width=device-width, initial-scale=1',
+  title: 'Premium Pool Construction & Stone Work in Texas | Golden Boy Stonework - Austin, San Antonio, Houston',
+  description: 'Texas\'s premier custom pool builders and stone craftsmen. Expert pool construction, luxury stonework, outdoor kitchens, fire pits, and elegant patios serving Austin, San Antonio, Houston, and all of Texas. Licensed, insured, and trusted by thousands. Free estimates available.',
+  keywords: 'custom pools Austin TX, pool builders San Antonio, luxury stonework Houston, outdoor living spaces Texas, pool construction Austin, stone patios San Antonio, BBQ islands Houston, fire pits Austin TX, pool contractors Texas, hardscaping San Antonio, outdoor kitchens Austin, swimming pool installation Texas, stone veneer Houston, paver driveways Austin, pool decks San Antonio, landscape design Texas, backyard remodeling Austin, luxury pools Houston, stone fireplaces San Antonio, pool renovation Texas, outdoor entertainment Austin, custom stonework Houston, pool design San Antonio, Texas pool builders, Austin pool company, San Antonio stonework, Houston outdoor living, Round Rock pools, Pflugerville stonework, Cedar Park pool builders, Georgetown pools, Kyle TX pools, Buda stonework, Dripping Springs pools, Lakeway pool construction, Westlake pools, Bee Cave stonework, Leander pool builders, Liberty Hill pools, Marble Falls stonework, Bastrop pools, Elgin pool construction, Manor pools, Del Valle stonework, Sunset Valley pools, Rollingwood pool builders, West Lake Hills pools, Barton Hills stonework, Zilker pools, South Austin pool construction, North Austin pools, East Austin stonework, pool builders near me Austin, stonework contractors Austin, luxury pools Austin TX, custom pools Round Rock, stone patios Cedar Park, outdoor kitchens Georgetown, fire pits Pflugerville, BBQ islands Kyle TX, pool decks Buda, swimming pool Dripping Springs, hardscaping Lakeway, landscape design Westlake, backyard renovation Bee Cave, outdoor living Leander, stone fireplaces Liberty Hill, pool installation Marble Falls, paver driveways Bastrop, stone veneer Elgin, outdoor entertainment Manor, pool renovation Del Valle, luxury stonework Sunset Valley, custom pools Rollingwood, premium pools West Lake Hills, stone craftsmanship Barton Hills, pool construction Zilker, outdoor spaces South Austin, swimming pools North Austin, stonework East Austin',
+  authors: [{ name: 'Golden Boy Stonework' }],
+  creator: 'Golden Boy Stonework',
+  publisher: 'Golden Boy Stonework',
+  robots: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/LOGOS/PAVERS LOGO.PNG',
+    icon: '/logos/favicon.png',
+    shortcut: '/logos/favicon.png',
+    apple: '/logos/logobg.png',
   },
   openGraph: {
-    title: 'Custom Pools & Pavers in Texas | Texas Pool & Pavers',
-    description: 'Top-rated specialists in custom swimming pools, elegant paver driveways, and luxury outdoor living spaces in Texas. Professional pool construction, hardscaping, BBQ islands, fire pits, and covered patios. Get your free quote today!',
-    url: 'https://texaspoolandpavers.com',
-    siteName: 'Texas Pool & Pavers',
+    title: 'Golden Boy Stonework - Premier Pool Builders & Stone Craftsmen in Texas',
+    description: 'Transform your backyard into a luxury oasis. Custom pools, elegant stonework, outdoor kitchens, and fire pits. Serving Austin, San Antonio, Houston, and all Texas cities. Licensed, insured, and trusted by thousands of homeowners.',
+    url: 'https://goldenboyonework.com',
+    siteName: 'Golden Boy Stonework',
     images: [
       {
-        url: '/LOGOS/PAVERS LOGO.PNG',
+        url: '/logos/logobg.png',
         width: 1200,
         height: 630,
-        alt: 'Texas Pool & Pavers Logo',
+        alt: 'Golden Boy Stonework - Premium Pool Construction & Stone Craftsmanship',
       },
     ],
     locale: 'en_US',
@@ -54,9 +53,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Custom Pools & Pavers in Texas | Texas Pool & Pavers',
-    description: 'Top-rated specialists in custom swimming pools, elegant paver driveways, and luxury outdoor living spaces in Texas.',
-    images: ['/LOGOS/PAVERS LOGO.PNG'],
+    title: 'Golden Boy Stonework - Texas Premier Pool Builders & Stone Experts',
+    description: 'Custom pools, luxury stonework, outdoor kitchens & fire pits. Serving Austin, San Antonio, Houston & all Texas. Licensed & insured. Free estimates.',
+    images: ['/logos/logobg.png'],
+    creator: '@GoldenBoyStonework',
+    site: '@GoldenBoyStonework',
   },
 }
 

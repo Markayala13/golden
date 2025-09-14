@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/components/providers/language-provider"
 import Image from "next/image"
+import Head from "next/head"
 
 export default function OurServicesPage() {
   const { t } = useLanguage()
