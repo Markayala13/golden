@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { useLanguage } from "@/components/providers/language-provider"
 import { Services } from "@/components/sections/Services"
+import { FloatingChat } from "@/components/ui/floating-chat"
 import { Hammer, Home, Sparkles, Award, Heart, ChevronLeft, ChevronRight, Play } from "lucide-react"
 
 export default function HomePage() {
@@ -166,6 +167,7 @@ export default function HomePage() {
           </div>
         </section>
       </div>
+      <FloatingChat />
     </>
   )
 }
