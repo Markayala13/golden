@@ -17,10 +17,9 @@ export async function POST(request: NextRequest) {
     }
 
     if (!process.env.OPENAI_API_KEY) {
-      return NextResponse.json(
-        { error: 'OpenAI API key not configured' },
-        { status: 500 }
-      );
+      return NextResponse.json({
+        response: "¡Hola! Soy el asistente de Golden Boy Stonework. Por el momento estoy en mantenimiento, pero puedes contactarnos directamente al (469) 478-6051 o (214) 478-6051 para más información sobre nuestros servicios de piscinas y trabajos en piedra."
+      });
     }
 
     // Read knowledge base from public folder
