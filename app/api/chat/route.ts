@@ -1,94 +1,65 @@
-import { NextRequest, NextResponse } from 'next/server';
-import OpenAI from 'openai';
+import { NextRequest, NextResponse } from 'next/server'
+import OpenAI from 'openai'
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-});
+})
 
 export async function POST(request: NextRequest) {
   try {
-    const { message, questionCount } = await request.json();
-
-    if (!message) {
-      return NextResponse.json(
-        { error: 'Message is required' },
-        { status: 400 }
-      );
-    }
-
     if (!process.env.OPENAI_API_KEY) {
       return NextResponse.json({
-        response: "¡Hola! Soy el asistente de Golden Boy Stonework. Por el momento estoy en mantenimiento, pero puedes contactarnos directamente al (469) 478-6051 o (214) 478-6051 para más información sobre nuestros servicios de piscinas y trabajos en piedra."
-      });
+        response: "¡Hola! Actualmente estamos en mantenimiento del chat. Puedes contactarnos directamente:\n\n📞 Teléfono: 469-478-6051 o 214-478-6051\n📧 Email: eliasbulmaro5@gmail.com\n\n¡Estaremos encantados de ayudarte con tu proyecto!"
+      })
     }
 
-    // Read knowledge base from public folder
-    let knowledgeBase = '';
-    try {
-      const knowledgeResponse = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/knowledge.txt`);
-      if (knowledgeResponse.ok) {
-        knowledgeBase = await knowledgeResponse.text();
-      } else {
-        throw new Error('Knowledge fetch failed');
-      }
-    } catch (knowledgeError) {
-      // Usar fallback sin exponer detalles del error
-      // Fallback knowledge
-      knowledgeBase = `Golden Boy Stonework - Premium Outdoor Living Solutions
-
-We create extraordinary Texas escapes with custom pools, stone patios, and gathering spaces built to last.
-
-Services: Custom pools, stone patios, outdoor kitchens, fire pits, water features, paver driveways, retaining walls, covered patios.
-
-Contact: (469) 478-6051 / (214) 478-6051
-Email: eliasbulmaro5@gmail.com / lopezbriana841@gmail.com`;
-    }
+    const { message } = await request.json()
 
     const completion = await openai.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: "gpt-4",
       messages: [
         {
           role: "system",
-          content: `You are Bulmaro, a friendly and knowledgeable customer service representative for Golden Boy Stonework. Use the following knowledge base to answer questions about our services in a conversational and helpful manner.
+          content: `Eres un asistente de Golden Boy Stonework, una empresa premium de construcción de piscinas y trabajos en piedra en Texas.
 
-Knowledge Base:
-${knowledgeBase}
+INFORMACIÓN DE LA EMPRESA:
+- Nombre: Golden Boy Stonework
+- Servicios: Piscinas personalizadas, patios de piedra, cocinas exteriores, pozos de fuego, terrazas cubiertas, muros de contención, hardscaping
+- Área de servicio: Todo Texas (Austin, San Antonio, Houston, Dallas y más ciudades)
+- Teléfonos: 469-478-6051 y 214-478-6051
+- Email: eliasbulmaro5@gmail.com y lopezbriana841@gmail.com
+- Website: goldenboytonework.com
 
-Instructions:
-- Always be friendly, professional, and enthusiastic about our services
-- Use "we" when referring to Golden Boy Stonework
-- If asked about pricing, mention that we provide free custom quotes
-- If asked about timeline, mention it depends on project scope but we work efficiently
-- Always end responses by asking if they have any other questions or if they'd like a quote
-- Keep responses concise but informative
-- If asked about something not in the knowledge base, politely redirect to our services or suggest contacting us directly
-- Always try to be helpful and provide value in your responses`
+TONO Y ESTILO:
+- Profesional pero amigable
+- Enfócate en la calidad premium y artesanía
+- Menciona que cada proyecto es personalizado
+- Siempre ofrece consulta gratuita
+- Responde en español si te escriben en español, en inglés si te escriben en inglés
+
+INSTRUCCIONES:
+- Responde preguntas sobre servicios, precios aproximados, proceso de trabajo
+- Para cotizaciones exactas, siempre pide que contacten directamente
+- Destaca la experiencia en Texas y conocimiento del clima local
+- Menciona garantías y licencias cuando sea relevante`
         },
         {
           role: "user",
           content: message
         }
       ],
-      max_tokens: 400,
+      max_tokens: 500,
       temperature: 0.7,
-    });
-
-    let response = completion.choices[0]?.message?.content ||
-      "I'm sorry, I couldn't process your request. Please try again or contact us directly at (469) 478-6051.";
-
-    // If this is the 6th question, add contact information
-    if (questionCount >= 6) {
-      response += "\n\nFor more detailed assistance, please contact us directly:\n\nPhone: (469) 478-6051 / (214) 478-6051\nEmail: eliasbulmaro5@gmail.com / lopezbriana841@gmail.com\n\nWe'd love to help you with your project!";
-    }
-
-    return NextResponse.json({ response });
-
-  } catch (error) {
-    // Solo log básico sin exponer información sensible
-    console.error('OpenAI API error occurred');
+    })
 
     return NextResponse.json({
-      response: "Hi! I'm Bulmaro from Golden Boy Stonework. I'm currently experiencing some technical difficulties, but I'd love to help you with your pool and outdoor living needs. Please contact us directly at (469) 478-6051 or try again in a moment!"
-    });
+      response: completion.choices[0]?.message?.content || "Lo siento, no pude procesar tu mensaje. Por favor contacta directamente al 469-478-6051."
+    })
+
+  } catch (error) {
+    console.error('Chat API Error:', error)
+    return NextResponse.json({
+      response: "Disculpa, hay un problema temporal. Contacta directamente:\n📞 469-478-6051 o 214-478-6051\n📧 eliasbulmaro5@gmail.com"
+    })
   }
 }

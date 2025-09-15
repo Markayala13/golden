@@ -14,7 +14,7 @@ export default function HomePage() {
     <>
       <div className="min-h-screen">
         {/* Hero Section */}
-        <section className="h-auto md:h-screen overflow-hidden flex flex-col items-center justify-center bg-white text-black pt-16 md:pt-0">
+        <section className="h-auto md:h-screen overflow-hidden flex flex-col items-center justify-center bg-black text-white pt-16 md:pt-0">
           {/* Title */}
           <div className="text-center"></div>
 
@@ -29,7 +29,7 @@ export default function HomePage() {
                 muted
                 playsInline
               >
-                <source src="/videos/video%20hero/0913.mp4" type="video/mp4" />
+                <source src="/videos/video hero/0913.mp4" type="video/mp4" />
               </video>
               {/* Mobile video */}
               <video
@@ -39,7 +39,7 @@ export default function HomePage() {
                 muted
                 playsInline
               >
-                <source src="/videos/video%20hero/0914.mp4" type="video/mp4" />
+                <source src="/videos/video hero/0914.mp4" type="video/mp4" />
               </video>
             </div>
 
@@ -47,13 +47,13 @@ export default function HomePage() {
             <div className="absolute inset-0 z-10 flex flex-col gap-4 items-center justify-end pb-12 md:flex-row md:items-center md:justify-center md:pb-0">
               <a
                 href="/our-services"
-                className="bg-black border-2 border-gold text-white hover:bg-gold hover:text-black px-8 py-2 w-64 text-center text-sm font-sans font-normal tracking-wider uppercase transition-all duration-300"
+                className="bg-black border-2 border-gold text-white hover:bg-gold hover:text-white px-8 py-2 w-64 text-center text-sm font-sans font-normal tracking-wider uppercase transition-all duration-300"
               >
                 {t("hero.services")}
               </a>
               <a
                 href="/contact"
-                className="bg-orange text-black hover:bg-gold hover:text-black px-8 py-2 w-64 text-center text-sm font-sans font-normal tracking-wider uppercase transition-all duration-300"
+                className="bg-orange text-white hover:bg-gold px-8 py-2 w-64 text-center text-sm font-sans font-normal tracking-wider uppercase transition-all duration-300"
               >
                 {t("hero.contact")}
               </a>
@@ -167,8 +167,6 @@ export default function HomePage() {
           </div>
         </section>
       </div>
-
-      {/* Floating Chat */}
       <FloatingChat />
     </>
   )
