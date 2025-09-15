@@ -20,41 +20,41 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Information */}
-      <section className="py-20 bg-gray-900">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-16 max-w-6xl mx-auto">
             <div className="text-center">
-              <h3 className="text-2xl font-serif font-light text-white mb-6 tracking-wide">
+              <h3 className="text-2xl font-serif font-light text-black mb-6 tracking-wide">
                 {t("contact.phone.title")}
               </h3>
-              <p className="text-3xl font-serif font-light text-white mb-4">
+              <p className="text-3xl font-serif font-light text-black mb-4">
                 (469) 478-6051 / (214) 478-6051
               </p>
-              <p className="text-white font-serif font-light">
+              <p className="text-black font-serif font-light">
                 {t("contact.phone.schedule")}
               </p>
             </div>
 
             <div className="text-center">
-              <h3 className="text-2xl font-serif font-light text-white mb-6 tracking-wide">
+              <h3 className="text-2xl font-serif font-light text-black mb-6 tracking-wide">
                 {t("contact.email.title")}
               </h3>
-              <p className="text-xl font-serif font-light text-white mb-4">
+              <p className="text-xl font-serif font-light text-black mb-4">
                 eliasbulmaro5@gmail.com / lopezbriana841@gmail.com
               </p>
-              <p className="text-white font-serif font-light">
+              <p className="text-black font-serif font-light">
                 {t("contact.email.response")}
               </p>
             </div>
 
             <div className="text-center">
-              <h3 className="text-2xl font-serif font-light text-white mb-6 tracking-wide">
+              <h3 className="text-2xl font-serif font-light text-black mb-6 tracking-wide">
                 {t("contact.address.title")}
               </h3>
-              <p className="text-xl font-serif font-light text-white mb-4">
+              <p className="text-xl font-serif font-light text-black mb-4">
                 Austin TX
               </p>
-              <p className="text-white font-serif font-light">
+              <p className="text-black font-serif font-light">
                 {t("contact.address.area")}
               </p>
             </div>
@@ -79,12 +79,12 @@ export default function ContactPage() {
       </section>
 
       {/* Serving Areas */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-serif font-light text-white mb-12">
+          <h2 className="text-4xl font-serif font-light text-black mb-12">
             {t("contact.serving.title")}
           </h2>
-          <p className="text-lg font-serif font-light text-white max-w-4xl mx-auto leading-relaxed">
+          <p className="text-lg font-serif font-light text-black max-w-4xl mx-auto leading-relaxed">
             {t("contact.serving.areas")}
           </p>
         </div>
@@ -195,7 +195,7 @@ export default function ContactPage() {
       </section>
 
       {/* Business Hours */}
-      <section className="py-32 bg-gray-50">
+      <section className="py-32 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-5xl md:text-6xl font-light text-gray-900 mb-16 leading-tight">
@@ -237,9 +237,7 @@ export default function ContactPage() {
               </p>
               <div className="flex justify-center space-x-8">
                 <a
-                  href="https://www.facebook.com/profile.php?id=61560989897082&mibextid=LQQJ4d"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#"
                   className="text-gray-600 hover:text-gray-900 transition-colors text-sm font-light tracking-wide uppercase"
                 >
                   {t("contact.social.facebook")}

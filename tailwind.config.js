@@ -71,8 +71,8 @@ module.exports = {
           DEFAULT: '#000000', // Deep black for secondary
           foreground: '#FFFFFF',
         },
-        background: '#000000', // Deep black for background
-        foreground: '#FFFFFF', // White for foreground
+        background: '#FFFFFF', // White for background
+        foreground: '#000000', // Black for foreground
         muted: {
           DEFAULT: '#BFBFBF', // Light gray for muted
           foreground: '#000000', // Deep black on gray

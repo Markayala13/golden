@@ -47,7 +47,6 @@ export function SchemaMarkup() {
       }
     ],
     "sameAs": [
-      "https://www.facebook.com/profile.php?id=61560989897082&mibextid=LQQJ4d",
       "https://www.instagram.com/goldenboytonework",
       "https://www.linkedin.com/company/goldenboytonework"
     ],
@@ -223,7 +222,6 @@ export function SchemaMarkup() {
     "url": "https://goldenboytonework.com",
     "logo": "https://goldenboytonework.com/logos/logobg.png",
     "sameAs": [
-      "https://www.facebook.com/profile.php?id=61560989897082&mibextid=LQQJ4d"
     ],
     "contactPoint": {
       "@type": "ContactPoint",

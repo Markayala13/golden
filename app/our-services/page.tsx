@@ -199,7 +199,7 @@ export default function OurServicesPage() {
               {t("services.cta.description")}
             </p>
             
-            <a href="/contact" className="inline-block bg-gray-900 text-white hover:bg-gray-800 px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-light tracking-wide transition-all duration-300 animate-fade-up-delay">
+            <a href="/contact" className="inline-block bg-orange text-black hover:bg-gold hover:text-black px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-light tracking-wide transition-all duration-300 animate-fade-up-delay">
               {t("services.cta.button")}
             </a>
           </div>
