@@ -28,7 +28,8 @@ jobs:
     - name: Deploy to Hostinger via FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: testespanol.store
+        server: ftp.testespanol.store
+        port: 21
         username: u347502929
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./out/
